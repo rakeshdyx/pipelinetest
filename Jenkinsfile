@@ -14,7 +14,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                sh "echo ${env.BUILD_ID}"
+                sh "echo ${env.JAVA_HOME}"
             }
         }
     }
