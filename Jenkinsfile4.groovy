@@ -6,8 +6,8 @@ pipeline {
             script: 'echo "clang"'
         )}"""
         EXIT_STATUS = """${sh(
-                returnStatus: true,
-                script = 'exit 1'
+            returnStatus: true,
+            script = 'exit 1'
         )}"""
     }
     stages {
