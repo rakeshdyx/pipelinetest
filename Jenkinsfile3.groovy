@@ -1,12 +1,12 @@
 pipeline {
     agent any
+    environment {
+        CC = 'clang'
+    }
     stages {
-        environment {
-            CC = 'clang'
-        }
-        stage {
+        stage('Example..') {
             environment {
-                BUILD_FLAG = '-g'
+                DEBUG_FLAGS = '-g'
             }
             steps {
                 sh 'printenv'
