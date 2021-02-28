@@ -4,7 +4,6 @@ pipeline {
         stage('Build') {
             steps {
                echo 'Building'
-               sh "${env.BUILD_ID}"
             }
         }
         stage('Test') {
@@ -15,6 +14,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
+                sh "${env.BUILD_ID}"
             }
         }
     }
