@@ -14,7 +14,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                sh "echo ${env.JAVA_HOME}"
+                sh "echo ${env.JENKINS_URL}"
             }
         }
     }
