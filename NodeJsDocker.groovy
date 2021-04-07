@@ -9,7 +9,7 @@ job('NodeJSexampleWithDockerBuild') {
         nodejs('nodejslatest')
     }
     steps {
-        dockerBuildAndPulish {
+        dockerBuildAndPublish {
             repositoryName('rakeshdyx/nodejs-demo')
             tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=7}')
             registryCredendtials('docker-hub')
