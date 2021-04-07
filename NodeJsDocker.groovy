@@ -14,7 +14,7 @@ job('NodeJSexampleWithDockerBuild') {
     steps {
         dockerBuildAndPublish {
             repositoryName('rakeshdyx/nodejs-demo')
-            tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=7}')
+            tag('${GIT_REVISION,length=7}')
             registryCredentials('docker-hub')
             forcePull(false)
             forceTag(false)
