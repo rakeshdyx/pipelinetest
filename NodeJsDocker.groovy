@@ -12,7 +12,7 @@ job('NodeJSexampleWithDockerBuild') {
         dockerBuildAndPublish {
             repositoryName('rakeshdyx/nodejs-demo')
             tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=7}')
-            registryCredendtials('docker-hub')
+            registryCredentials('docker-hub')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
