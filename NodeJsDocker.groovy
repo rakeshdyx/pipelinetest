@@ -1,6 +1,6 @@
 job('NodeJSexampleWithDockerBuild') {
     scm {
-        git(''https://github.com/rakeshdyx/node-app.git'')
+        git('https://github.com/rakeshdyx/node-app.git')
     }
     triggers {
         smc('* * * * *')
