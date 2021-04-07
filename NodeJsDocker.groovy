@@ -3,7 +3,7 @@ job('NodeJSexampleWithDockerBuild') {
         git('https://github.com/rakeshdyx/node-app.git')
     }
     triggers {
-        smc('* * * * *')
+        scm('* * * * *')
     }
     wrappers {
         nodejs('nodejslatest')
