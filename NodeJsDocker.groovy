@@ -1,6 +1,9 @@
 job('NodeJSexampleWithDockerBuild') {
     scm {
-        git('https://github.com/rakeshdyx/node-app.git')
+        git('https://github.com/rakeshdyx/node-app.git') { node->
+                node / gitConfigName('rakeshdyx')
+                node / gitConfigEmail('rakeshdyx@gmail.com')        
+                }
     }
     triggers {
         scm('* * * * *')
