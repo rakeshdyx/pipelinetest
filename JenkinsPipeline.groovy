@@ -5,7 +5,7 @@ node {
         git 'https://github.com/rakeshdyx/node-app.git'
         //Get the maven tool must be configured
         //**Note: This 'M3' Maven tool must be configured in global config
-        mvnHome = tool 'M3'
+        mvnHome = tool 'maven3.0'
     }
     stage('Build') {
         // Run the maven build
